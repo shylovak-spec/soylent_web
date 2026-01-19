@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1b; }
+        .gradient-bg { background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter uppercase">Soylent</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+            <a href="#" class="hover:opacity-50 transition">Об'єкти</a>
+            <a href="#" class="hover:opacity-50 transition">Рішення</a>
+            <a href="#" class="hover:opacity-50 transition">Експертиза</a>
+        </div>
+        <a href="tel:+380XXXXXXXXX" class="text-sm border-b border-black pb-1 hover:opacity-50 transition">
+            +380 (XX) XXX XX XX
+        </a>
+    </nav>
+
+    <section class="relative h-[85vh] flex items-center px-8 max-w-7xl mx-auto">
+        <div class="z-10 max-w-3xl">
+            <div class="inline-block px-3 py-1 mb-6 border border-black text-[10px] uppercase tracking-[0.2em] font-semibold">
+                Енергетичний суверенітет
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-light tracking-tight mb-8 leading-[0.9]">
+                Ваш бізнес працює <br> <span class="font-semibold italic text-slate-800">попри все.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-500 mb-12 max-w-xl leading-relaxed">
+                Світло згасає у конкурентів — у вас продовжує готуватись кава та працювати кухня. 
+                Soylent створює системи автономності, де потужність зустрічається з інтелектом. 
+                Ми не просто ставимо інвертори. Ми гарантуємо ваш спокій.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6">
+                <button class="bg-[#1a1a1b] text-white px-10 py-5 text-sm uppercase tracking-widest hover:bg-gray-800 transition shadow-2xl">
+                    Замовити прорахунок
+                </button>
+                <button class="border border-gray-200 px-10 py-5 text-sm uppercase tracking-widest hover:bg-gray-50 transition">
+                    Наші кейси
+                </button>
+            </div>
+        </div>
+
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[70%] hidden lg:block">
+            <div class="w-full h-full bg-[#1a1a1b] flex items-center justify-center relative overflow-hidden">
+                <span class="text-white opacity-20 text-xs uppercase tracking-[1em] rotate-90">Soylent Systems 2024</span>
+                <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-50" style="background-image: url('https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=2000');"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#1a1a1b] text-white py-24 px-8 mt-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div>
+                <h4 class="text-xs uppercase tracking-widest mb-4 opacity-50">Швидкість</h4>
+                <p class="text-lg font-light">Проєктування за 24 години. Монтаж у нічну зміну, щоб не зупиняти ваші продажі.</p>
+            </div>
+            <div>
+                <h4 class="text-xs uppercase tracking-widest mb-4 opacity-50">Надійність</h4>
+                <p class="text-lg font-light">Використовуємо лише промислові рішення. Ніяких компромісів. Ніяких вимкнень.</p>
+            </div>
+            <div>
+                <h4 class="text-xs uppercase tracking-widest mb-4 opacity-50">Результат</h4>
+                <p class="text-lg font-light">Ви стаєте автономною одиницею. Поза межами загальної мережі. Поза межами проблем.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
