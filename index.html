@@ -1,79 +1,129 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soylent | Автономна енергія для HoReCa</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1b; }
-        .gradient-bg { background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%); }
+        .mask-image { mask-image: linear-gradient(to bottom, black 80%, transparent 100%); }
     </style>
 </head>
-<body class="gradient-bg">
+<body class="selection:bg-black selection:text-white">
 
-    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-bold tracking-tighter uppercase">Soylent</div>
-        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
-            <a href="#" class="hover:opacity-50 transition">Об'єкти</a>
-            <a href="#" class="hover:opacity-50 transition">Рішення</a>
-            <a href="#" class="hover:opacity-50 transition">Експертиза</a>
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter uppercase">Soylent</div>
+            <div class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-medium">
+                <a href="#projects" class="hover:text-gray-400 transition">Об'єкти</a>
+                <a href="#philosophy" class="hover:text-gray-400 transition">Маніфест</a>
+                <a href="#contact" class="hover:text-gray-400 transition">Контакти</a>
+            </div>
+            <a href="tel:+380XXXXXXXXX" class="text-sm font-medium">+380 (XX) XXX XX XX</a>
         </div>
-        <a href="tel:+380XXXXXXXXX" class="text-sm border-b border-black pb-1 hover:opacity-50 transition">
-            +380 (XX) XXX XX XX
-        </a>
     </nav>
 
-    <section class="relative h-[85vh] flex items-center px-8 max-w-7xl mx-auto">
-        <div class="z-10 max-w-3xl">
-            <div class="inline-block px-3 py-1 mb-6 border border-black text-[10px] uppercase tracking-[0.2em] font-semibold">
-                Енергетичний суверенітет
-            </div>
-            
-            <h1 class="text-6xl md:text-8xl font-light tracking-tight mb-8 leading-[0.9]">
-                Ваш бізнес працює <br> <span class="font-semibold italic text-slate-800">попри все.</span>
+    <section class="relative min-h-screen flex items-center pt-20 px-6 max-w-7xl mx-auto">
+        <div class="z-10 w-full lg:w-2/3">
+            <span class="inline-block mb-6 text-[10px] uppercase tracking-[0.4em] text-gray-400">Енергетичний суверенітет</span>
+            <h1 class="text-5xl md:text-[100px] font-light leading-[0.85] tracking-tighter mb-10">
+                ВАШ БІЗНЕС ПРАЦЮЄ <br>
+                <span class="italic font-normal">ПОПРИ ВСЕ.</span>
             </h1>
-            
-            <p class="text-lg md:text-xl text-gray-500 mb-12 max-w-xl leading-relaxed">
-                Світло згасає у конкурентів — у вас продовжує готуватись кава та працювати кухня. 
-                Soylent створює системи автономності, де потужність зустрічається з інтелектом. 
-                Ми не просто ставимо інвертори. Ми гарантуємо ваш спокій.
+            <p class="text-lg md:text-xl text-gray-500 max-w-md mb-12 font-light leading-relaxed">
+                Коли місто згасає — Soylent вмикається. Професійні системи живлення для ресторанів, готелів та кав'ярень України.
             </p>
-
-            <div class="flex flex-col sm:flex-row gap-6">
-                <button class="bg-[#1a1a1b] text-white px-10 py-5 text-sm uppercase tracking-widest hover:bg-gray-800 transition shadow-2xl">
-                    Замовити прорахунок
-                </button>
-                <button class="border border-gray-200 px-10 py-5 text-sm uppercase tracking-widest hover:bg-gray-50 transition">
-                    Наші кейси
-                </button>
+            <div class="flex flex-wrap gap-6">
+                <a href="#contact" class="bg-black text-white px-10 py-5 text-xs uppercase tracking-widest hover:bg-gray-800 transition">
+                    Отримати прорахунок
+                </a>
+                <a href="#projects" class="border border-gray-200 px-10 py-5 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
+                    Наші об'єкти
+                </a>
             </div>
         </div>
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-gray-50 -z-10 hidden lg:block opacity-50"></div>
+    </section>
 
-        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[70%] hidden lg:block">
-            <div class="w-full h-full bg-[#1a1a1b] flex items-center justify-center relative overflow-hidden">
-                <span class="text-white opacity-20 text-xs uppercase tracking-[1em] rotate-90">Soylent Systems 2024</span>
-                <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-50" style="background-image: url('https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=2000');"></div>
+    <section id="philosophy" class="py-32 bg-[#1a1a1b] text-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight">
+                    Ми не продаємо акумулятори. <br>
+                    <span class="opacity-40">Ми продаємо гарантію того, що ваш чек не зупиниться ні на хвилину.</span>
+                </h2>
+                <div class="space-y-12">
+                    <div>
+                        <span class="text-[10px] uppercase tracking-widest text-gray-500">01. Швидкість</span>
+                        <p class="mt-4 text-gray-300 font-light italic">«Час — це гроші. Ми монтуємо системи вночі, щоб зранку ви вже були автономними.»</p>
+                    </div>
+                    <div>
+                        <span class="text-[10px] uppercase tracking-widest text-gray-500">02. Надійність</span>
+                        <p class="mt-4 text-gray-300 font-light italic">«Тільки промислове залізо. Ніяких побутових рішень для серйозного бізнесу.»</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[#1a1a1b] text-white py-24 px-8 mt-12">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+    <section id="projects" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16">
             <div>
-                <h4 class="text-xs uppercase tracking-widest mb-4 opacity-50">Швидкість</h4>
-                <p class="text-lg font-light">Проєктування за 24 години. Монтаж у нічну зміну, щоб не зупиняти ваші продажі.</p>
+                <h2 class="text-4xl font-light tracking-tighter uppercase">Виконані об'єкти</h2>
+                <p class="text-gray-400 mt-2">Реальні кейси, що вже працюють</p>
             </div>
-            <div>
-                <h4 class="text-xs uppercase tracking-widest mb-4 opacity-50">Надійність</h4>
-                <p class="text-lg font-light">Використовуємо лише промислові рішення. Ніяких компромісів. Ніяких вимкнень.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="group overflow-hidden bg-gray-100 aspect-[4/5] relative">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                <div class="flex items-center justify-center h-full text-gray-400 uppercase text-[10px] tracking-widest">Фото об'єкту #1</div>
+                <div class="absolute bottom-8 left-8 text-white">
+                    <p class="text-[10px] uppercase tracking-widest opacity-70">Київ</p>
+                    <h3 class="text-2xl mt-1">Ресторан "Noir"</h3>
+                    <p class="text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">Резерв кухні 20 кВт / 10 годин</p>
+                </div>
             </div>
-            <div>
-                <h4 class="text-xs uppercase tracking-widest mb-4 opacity-50">Результат</h4>
-                <p class="text-lg font-light">Ви стаєте автономною одиницею. Поза межами загальної мережі. Поза межами проблем.</p>
+            <div class="group overflow-hidden bg-gray-100 aspect-[4/5] relative">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                <div class="flex items-center justify-center h-full text-gray-400 uppercase text-[10px] tracking-widest">Фото об'єкту #2</div>
+                <div class="absolute bottom-8 left-8 text-white">
+                    <p class="text-[10px] uppercase tracking-widest opacity-70">Львів</p>
+                    <h3 class="text-2xl mt-1">Готель "Central"</h3>
+                    <p class="text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">Повна автономність ліфтів та кас</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="contact" class="py-32 px-6 bg-gray-50">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-light tracking-tighter uppercase mb-6">Залишайтесь у грі</h2>
+            <p class="text-gray-500 mb-12 font-light">Залиште контакти для аудиту вашого об'єкту або зателефонуйте нам прямо зараз.</p>
+            
+            <form action="https://formspree.io/f/ВАШ_ID" method="POST" class="space-y-6 text-left">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="name" placeholder="ВАШЕ ІМ'Я" class="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-black transition text-sm uppercase tracking-widest" required>
+                    <input type="tel" name="phone" placeholder="НОМЕР ТЕЛЕФОНУ" class="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-black transition text-sm uppercase tracking-widest" required>
+                </div>
+                <textarea name="message" placeholder="ТИП ЗАКЛАДУ ТА ПОТУЖНІСТЬ (ЯКЩО ВІДОМО)" rows="4" class="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-black transition text-sm uppercase tracking-widest"></textarea>
+                
+                <div class="pt-10 flex flex-col items-center gap-6">
+                    <button type="submit" class="w-full md:w-auto bg-black text-white px-16 py-5 text-[10px] uppercase tracking-[0.3em] hover:bg-gray-800 transition">
+                        Надіслати запит
+                    </button>
+                    <p class="text-gray-400 text-xs">АБО</p>
+                    <a href="tel:+380XXXXXXXXX" class="text-lg font-medium border-b border-black">+380 (XX) XXX XX XX</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-100 text-center">
+        <p class="text-[10px] text-gray-400 uppercase tracking-[0.5em]">© 2024 Soylent Energy. Всі права захищені.</p>
+    </footer>
 
 </body>
 </html>
